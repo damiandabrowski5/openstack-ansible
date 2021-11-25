@@ -35,6 +35,12 @@ galera_client_package_state: "{{ package_state }}"
 galera_address: "{{ internal_lb_vip_address }}"
 galera_root_user: "admin"
 
+## SQLAlchemy pooling options
+openstack_db_max_overflow: 50
+openstack_db_max_pool_size: 5
+openstack_db_pool_timeout: 30
+openstack_db_connection_recycle_time: 600
+
 ## Memcached options
 memcached_port: 11211
 memcached_servers: >-

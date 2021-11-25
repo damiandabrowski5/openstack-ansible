@@ -1,0 +1,2 @@
+features:
+  - Added following variables to be used as default values for database connection pooling in openstack-ansible roles: ``openstack_db_max_overflow``, ``openstack_db_max_pool_size``, ``openstack_db_pool_timeout``, ``openstack_db_connection_recycle_time``.
